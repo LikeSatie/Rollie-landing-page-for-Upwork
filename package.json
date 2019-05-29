@@ -4,7 +4,8 @@
   "description": "> node -v",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "gulp-rimraf": "^0.2.2",
     "gulp-sass": "^4.0.2",
     "gulp.spritesmith": "^6.10.0",
+    "rfs": "^8.0.4",
     "rimraf": "^2.6.3"
   }
 }

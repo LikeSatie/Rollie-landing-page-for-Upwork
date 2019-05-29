@@ -1,3 +1,6 @@
-body {
-  background: grey;
-}
+@import 'bin/reset';
+@import 'bin/setting';
+@import 'bin/mixins';
+@import 'bin/vars';
+@import 'page/main';
+@import 'page/header';

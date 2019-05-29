@@ -1,0 +1,47 @@
+main .container {
+  padding-top: 5rem;
+  .slogan {
+    margin: auto;
+    text-align: center;
+    &__title {
+      padding: 0 25vw;
+      @include font-size(28px);
+      h1 {
+        font-weight: 300;
+        letter-spacing: 3px;
+      }
+    }
+    &__button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 15px 20px;
+      border-radius: 20px;
+      background-color: rgba(214, 94, 94, 0.144);
+      color: rgb(230, 33, 33);
+      a {
+        @include font-size(18px);
+        text-decoration: none;
+        color: rgb(230, 33, 33);
+      }
+    }
+  }
+  .slider {
+    &__container {
+      display: flex;
+      flex-direction: row;
+      margin-top: 7.5rem;
+      padding: 0 7.5rem;
+      overflow: hidden;
+
+      .slide__item {
+        padding-right: 3rem;
+        &:last-child {
+          padding-right: 0;
+        }
+        img {
+          max-width: 274px;
+        }
+      }
+    }
+  }
+}
