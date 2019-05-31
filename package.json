@@ -30,6 +30,7 @@
     "gulp-sass": "^4.0.2",
     "gulp.spritesmith": "^6.10.0",
     "rfs": "^8.0.4",
-    "rimraf": "^2.6.3"
+    "rimraf": "^2.6.3",
+    "swiper": "^4.5.0"
   }
 }

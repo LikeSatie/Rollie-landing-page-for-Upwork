@@ -1,5 +1,12 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+/* Slogan, button & slider */
 main .container {
-  padding-top: 5rem;
+  padding-top: 7.5rem;
   .slogan {
     margin: auto;
     text-align: center;
@@ -26,22 +33,108 @@ main .container {
     }
   }
   .slider {
+    display: flex;
+    justify-content: center;
+    margin-top: 7.5rem;
+    padding: 0 5rem;
+    ::-webkit-scrollbar {
+      display: none;
+    }
     &__container {
       display: flex;
       flex-direction: row;
-      margin-top: 7.5rem;
-      padding: 0 7.5rem;
-      overflow: hidden;
-
-      .slide__item {
-        padding-right: 3rem;
-        &:last-child {
-          padding-right: 0;
+      overflow-x: auto;
+      .slide__item-margin {
+        .slide__item {
+          line-height: 0;
+          margin-right: 2.5rem;
+          box-shadow: rgba(23, 24, 26, 0.1) 0 40px 40px 0;
+          border-radius: 40px;
+          img {
+            max-width: 274px;
+          }
         }
-        img {
-          max-width: 274px;
+        #slide-6 {
+          margin-right: 0;
         }
       }
     }
   }
+}
+
+/* Functions section */
+.functions {
+  position: relative;
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    margin-top: 10rem;
+    padding: 0 17.5rem;
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding-top: 2rem;
+      .functions__item {
+        width: 20%;
+        padding: 0;
+        text-align: center;
+        .svg-icon {
+        }
+        .functions__item-title {
+          padding-top: 1rem;
+        }
+        .function__item-text {
+          padding: 0 1.3rem;
+          padding-top: 0.5rem;
+          line-height: 1.75;
+        }
+      }
+    }
+  }
+}
+
+/* Gif`s */
+header .gif-image {
+  position: absolute;
+  top: -50px;
+  left: -80px;
+  width: 200px;
+  height: 200px;
+}
+
+.slogan__title .gif-image {
+  position: absolute;
+  top: 150px;
+  right: 150px;
+  width: 200px;
+  height: 200px;
+}
+
+.slogan__button .gif-image {
+  position: absolute;
+  top: 300px;
+  left: 150px;
+  width: 200px;
+  height: 200px;
+}
+
+.functions .container img[alt='spiral-gif'] {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+}
+
+.functions .container img[alt='cloud-gif'] {
+  position: absolute;
+  top: 200px;
+  right: 50px;
+  width: 200px;
+  height: 200px;
 }
